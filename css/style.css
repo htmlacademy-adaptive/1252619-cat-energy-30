@@ -1,0 +1,36 @@
+@font-face {
+font-style: normal;
+font-weight: 400;
+font-family: "Lato";
+src: url(../fonts/Lato-Regular.ttf) format("ftt");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-Regular.ttf) format("ftt");
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
