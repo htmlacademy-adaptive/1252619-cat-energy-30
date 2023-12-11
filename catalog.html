@@ -8,151 +8,261 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <a class="navigation-logo" href="index.html" aria-current="page">
-        <img src="images/svg/logo.svg" width="70px" height="59px" alt="Логотип Кэт Энерджи">
-        </a>
-        <nav class="main-navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная.</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html">Каталог продукции.</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="form.html">Подбор программы.</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main main-catalog">
-        <h1>Каталог продукции</h1>
+    <header class="main-header">
+      <div class="page-header__container container">
+      <a class="navigation-logo" href="index.html" aria-current="page">
+      <img src="images/svg/logo.svg" width="70px" height="59px" alt="Логотип Кэт Энерджи">
+      </a>
+      <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
+      <nav class="page-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="index.html" aria-current="page">Главная.</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="catalog.html" aria-current="page">Каталог продукции.</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы.</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero__content">
+        <h1 class="visually-hidden">Функциональное питание для котов.</h1>
+        <p class="advantages-text page-text">Занялся собой? Займись котом!</p>
+      </div>
+        <a class="navigation-button button" href="#">подобрать программу</a>
+        <figure class="hero-img">
+          <img src="images/img-hero.jpg" width="709px" height="609px" alt="Cat pro Energy">
+        </figure>
+      </section>
+    </div>
+    </header>
+      <main class="page__main">
+        <div class="container">
+        <section class="catalog">
+        <h1 class="page__title page-title">Каталог продукции</h1>
         <div class="energy-product">
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/chi500g.jpg" alt="Курица 500г." width="161px" heigh="172px">
-                <h3>Cat Energy PRO 500 г</h3>
+                <h3 class="product__title">Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">500г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Курица</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">700 ₽</p>
+              <div class="product-inner">
+              <dl class="prodict__specs-item">
+                <dt class="prodict__specs_field">Масса</dt>
+                <dd class="prodict__specs-value">500 г</dd>
+              <div class="prodict__specs-item">
+                <dt class="prodict__specs_field">Вкус</dt>
+                <dd class="prodict__specs-value">Курица</dd>
+              </div>
+              <div>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Цена</dt>
+                  <dd class="prodict__specs-value">700 ₽</dd>
+              </div>
+              </div>
+            </dl>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
+              </div>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/chi1000g.jpg" alt="Курица 500г." width="172px" heigh="196px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">1000г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Курица</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">1000 ₽</p>
+              <div class="product-inner">
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">1000 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Курица</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">1000 ₽</dd>
+                </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/fish500g.jpg" alt="Курица 500г." width="163px" heigh="174px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">500г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Рыба</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">700 ₽</p>
-              <button class="energy-favorites button button-light" type="button">Заказать</button>
+              <div>
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">500 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Рыба</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">700 ₽</dd>
+                </div>
+                </div>
+              </dl>
+                <button class="energy-favorites button button-light" type="button">Заказать</button>
+                </div>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/fish100g.jpg" alt="Курица 500г." width="172px" heigh="196px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">1000г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Рыба</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">1000 ₽</p>
+              <div>
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">500 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Рыба</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">1000 ₽</dd>
+                </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/g500g.jpg" alt="Курица 500г." width="161px" heigh="171px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">500г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Курица</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">400 ₽</p>
+              <div>
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">500 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Курица</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">400 ₽</dd>
+                </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/g1000g.jpg" alt="Курица 500г." width="172px" heigh="196px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">1000г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Курица</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">700 ₽</p>
+              <div>
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">1000 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Курица</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">700 ₽</dd>
+                </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <img class="energy-image-link" src="images/ris500g.jpg" alt="Курица 500г." width="163px" heigh="174px">
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <p class="energy-text energy-text-type">масса</p>
-              <p class="energy-text energy-card-gram">500г</p>
-              <p class="energy-text energy-card-taste">Вкус</p>
-              <p class="energy-text energy-card-name">Курица</p>
-              <p class="energy-text energy-card-price">Цена</p>
-              <p class="energy-text energy-card-st">500 ₽</p>
+              <div>
+                <dl class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Масса</dt>
+                  <dd class="prodict__specs-value">500 г</dd>
+                <div class="prodict__specs-item">
+                  <dt class="prodict__specs_field">Вкус</dt>
+                  <dd class="prodict__specs-value">Курица</dd>
+                </div>
+                <div>
+                  <div class="prodict__specs-item">
+                    <dt class="prodict__specs_field">Цена</dt>
+                    <dd class="prodict__specs-value">500 с</dd>
+                </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
           </ul>
-          <ul class="energy-list">
-            <li class="energy-card">
+          <ul class="catalog__list">
+            <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <h3>Показать еще 100500 товаров</h3>
-              </a>
-              <p class="energy-text energy-text-type">На самом деле вкусов гораздо больше!</p>
+                <h3 class="product__title">Показать еще 100500 товаров</h3></a>
+              <p class="product-info">На самом деле вкусов гораздо больше!</p>
               <button class="energy-favorites button button-light" type="button">Показать Все</button>
             </li>
           </ul>
         </div>
-        <section>
-          <h2 class="extra-product">Дополнительные товары</h2>
+        <section class="extra">
+          <div class="container">
+            <h2 class="extra__title section-title">Дополнительные товары</h2>
+            <div class="exta__inner">
+              <ul class="extra__list">
+                <li class="add_item add-product">
+                  <h3 class="add-product__title">Сахаразаменитель</h3>
+                  <p class="add__product__specs-field">1 упаковка (100 г)</p>
+                  <p class="add__product__specs-value">200 ₽</p>
+                  <a class="extra_product_button button" href="#">Заказать</a>
+                </li>
+                <li class="add_item add-product">
+                  <h3 class="add-product__title">Питьевая вода</h3>
+                  <p class="add__product__specs-field">5 литров</p>
+                  <p class="add__product__specs-value">50 ₽</p>
+                  <a class="extra_product_button button" href="#">Заказать</a>
+                </li>
+                <li class="add_item add-product">
+                  <h3 class="add-product__title">Молоко</h3>
+                  <p class="add__product__specs-field">1 литр</p>
+                  <p class="add__product__specs-value">100 ₽</p>
+                  <a class="extra_product_button button" href="#">Заказать</a>
+                </li>
+                <li class="add_item add-product">
+                  <h3 class="add-product__title">Витамины</h3>
+                  <p class="add__product__specs-field">1 упаковка (30 г)</p>
+                  <p class="add__product__specs-value">300 ₽</p>
+                  <a class="extra_product_button button" href="#">Заказать</a>
+                </li>
+              </ul>
+              <div class="extra__promotion">
+                <h2 class="visually-hidden">Акция</h2>
+                <p class="extra__promotion-title">Закажите Все <br>и получите чехол для кота в подарок</p>
+              </div>
+            </div>
+
+          </div>
         </section>
-        <section class="search">
-          <h2 class="search-title page-title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="search-text page-text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="search-text page-city">Санкт-Петербург</p>
-        </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <div class="contacts-container container">
+            <div class="contacts_wrapper">
+              <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
+              <address class="contacts_address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span>
+              </address>
+            </div>
+         <figure class="map">
+           <img src="images/map2.jpg" width="1440px" height="400px" alt="Карта">
+             </figure>
+
         <footer class="footer">
           <a class="cat-energy" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="128" height="25" viewBox="0 0 128 25" fill="none">
