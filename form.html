@@ -11,7 +11,7 @@
     <div class="wrapper">
       <header class="main-header">
         <a class="navigation-logo" href="index.html" aria-current="page">
-        <img src="images/svg/logo.svg" width="70px" height="59px" alt="Логотип Кэт Энерджи">
+        <img src="images/svg/logo.svg" width="70" height="59" alt="Логотип Кэт Энерджи">
         </a>
         <nav class="main-navigation">
           <ul class="navigation-list">
@@ -36,39 +36,94 @@
           <form class="program-select__form form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__wrapper">
             <fieldset class="form__fieldset form__fieldset--data">
-
+          <legend class="visually-hidden">Персональные данные</legend>
+          <ul class="form__group">
+          <li class="form__group-item">
+            <label class="form__label" for="name">Имя:<sup>*</sup></label>
+            <input class="form__input page-input" id="name" type="text" name="cat-name" placeholder="Барсик" required>
+          </li>
+          <li class="form__group-item">
+            <label class="form__label">
+              <span>Вес (кг):*</span>
+              <input class="form__input page-input" id="weight" type="number" name="cat-weight" placeholder="7" required>
+            </label>
+          </li>
+          <li class="form__group-item">
+            <label class="personal-data__item">Возраст (лет):
+              <input class="personal-data__input page-input" id="age" type="number" name="cat-age" placeholder="7">
+            </label>
+          </li>
+        </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--radio">
               <legend class="visually-hidden">Выбор нужной программы</legend>
               <ul class="control control--radio">
                 <li class="control__item">
-                  <input class="control__input control__input--radio" type="radio" name="grop-weight" value="Похудение" id="slimming" checked>
+                  <input class="control__input control__input--radio" type="radio" name="weight" value="Похудение" id="slimming" checked>
                   <label class="control_label form__label" form="sliming">Похудение</label>
                 </li>
                 <li>
                   <label class="weight-question__label">
                     <input class="weight-question__radio" id="weight-down" type="radio" name="weight" value="weight-down" checked>
-                    <span class="form__label">Похудение</span>
+                    <span class="form__label">набор массы</span>
                   </label>
                 </li>
+                <li>
+                  <label class="weight-question__label">
+                    <input class="weight-question__radio" id="weight-up" type="radio" name="weight" value="weight-up">Не знаю (Нужен ваш совет)</label>
+                </li>
               </ul>
-              <label class="weight-question__label">
-                <input class="weight-question__radio" id="weight-up" type="radio" name="weight" value="weight-up">Набор массы</label>
-              </label>
             </fieldset>
           </div>
             <fieldset class="form__fieldset form__fieldset--contacts">
-
+              <h2 class="form__legend">Контактные данные (владельца кота)</h2>
+              <div>
+                <div>
+                  <label class="form__label" for="form-mail">E-mail:<sup>*</sup></label>
+                  <span class="form__input-container form__input-container--email">
+                    <input class="form__input form__input--email" type="email" id="form-email" placeholder="kuklachev@gmail.com" required>
+                  </span>
+                </div>
+              <label class="form-contacts__item">Телефон:*
+                <input class="form-contacts__input page-input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
+              <div>
+                <fieldset class="form__fieldset form__fieldset--comment">
+                <h2 class="form__comment">Комментарий</h2>
+                <label class="visually-hidden" for="comment">Расскажите про кота</label>
+                <textarea class="form-comment__textarea page-input" id="comment" name="comment" placeholder="Расскажите оба всех повадках кота"></textarea>
+                </fieldset>
+              </div>
 
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--check">
+              <h2 class="program-form__check section-title">Дополнительно</h2>
+              <ul class="control control--check list-rest">
+                <li class="control__item">
+                  <input class="control__input control__input--check" type="checkbox" name="sweetener" value="Сахаразаменитель" id="sweetener" checked>
+                  <label class="control__label form__label" for="sweetener">Сахаразаменитель</label>
+                </li>
+                <li class="form-additional__item">
+                  <input class="form-additional__checkbox" type="checkbox" name="water" value="Сахаразаменитель" id="water" checked>
+                  <label class="control__label form__label" for="water">питьевая вода</label>
+                </li>
+                <li class="form-additional__item">
+                  <input class="form-additional__checkbox" type="checkbox" name="milk" value="Сахаразаменитель" id="milk" checked>
+                  <label class="control__label form__label" for="milk">молоко</label>
+                </li>
+                <li class="form-additional__item">
+                  <input class="form-additional__checkbox" type="checkbox" name="vitamin" value="Сахаразаменитель" id="vitamin" checked>
+                  <label class="control__label form__label" for="vitamin">витамины</label>
+                </li>
+              </ul>
 
             </fieldset>
-            <div class="form__fieldset form__fieldset_submit">
-              <button class="program-select-form__button button" type="submit">Отправить заявку</button>
-              <span class="program-form__explanation">* &mdash; Обязательные поля</span>
+            <div class="form__fieldset form__fieldset--submit">
+              <button class="form__button button" type="submit">Отправить заявку</button>
+              <span class="form__explanation">* &mdash; Обязательные поля</span>
             </div>
           </form>
         </section>
@@ -82,8 +137,11 @@
               </address>
             </div>
          <figure class="map">
-           <img src="images/map2.jpg" width="1440px" height="400px" alt="Карта">
+           <img src="images/Map.png " width="320" height="362" alt="Карта с контактами">
              </figure>
+             </div>
+             </section>
+      </main>
 
         <footer class="footer">
           <a class="cat-energy" href="#">
@@ -139,7 +197,5 @@
             </li>
           </ul>
         </footer>
-      </main>
-
   </body>
 </html>
