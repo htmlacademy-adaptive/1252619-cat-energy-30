@@ -11,7 +11,11 @@
     <header class="main-header">
       <div class="page-header__container container">
       <a class="navigation-logo" href="index.html" aria-current="page">
-      <img src="images/svg/logo.svg" width="70" height="59" alt="Логотип Кэт Энерджи">
+      <picture>
+        <source width="174" height="59" type="images/svg" media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg">
+        <source width="174" height="59" type="images/svg" media="(min-width: 768)" srcset="images/svg/logo-tablet.svg">
+        <img src="images/svg/logodesk.svg" width="202" height="59" alt="Логотип Кэт Энерджи">
+      </picture>
       </a>
       <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
       <nav class="page-header__navigation navigation">
@@ -27,17 +31,7 @@
           </li>
         </ul>
       </nav>
-      <section class="hero">
-        <div class="hero__content">
-        <h1 class="visually-hidden">Функциональное питание для котов.</h1>
-        <p class="advantages-text page-text">Занялся собой? Займись котом!</p>
       </div>
-        <a class="navigation-button button" href="#">подобрать программу</a>
-        <figure class="hero-img">
-          <img src="images/img-hero.jpg" width="709" height="609" alt="Cat pro Energy">
-        </figure>
-      </section>
-    </div>
     </header>
       <main class="page__main">
         <div class="container">
@@ -47,7 +41,11 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/chi500g.jpg" alt="Курица 500г." width="161" heigh="172">
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/chi500g.jpg" alt="Курица 500г." width="161" heigh="172">
+                </picture>
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
               </a>
               <div class="product-inner">
@@ -72,8 +70,12 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/chi1000g.jpg" alt="Курица 500г." width="172px" heigh="196px">
-                <h3>Cat Energy PRO 500 г</h3>
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                 <img class="energy-image-link" src="images/chi1000g.jpg" alt="Курица 500г." width="172px" heigh="196px">
+                </picture>
+                <h3>Cat Energy PRO 1000 г</h3>
               </a>
               <div class="product-inner">
                 <dl class="prodict__specs-item">
@@ -94,10 +96,14 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/fish500g.jpg" alt="Курица 500г." width="163" heigh="174">
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/fish500g.jpg" alt="Курица 500г." width="163" heigh="174">
+                </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <div>
+              <div class="product-inner">
                 <dl class="prodict__specs-item">
                   <dt class="prodict__specs_field">Масса</dt>
                   <dd class="prodict__specs-value">500 г</dd>
@@ -119,10 +125,14 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/fish100g.jpg" alt="Курица 500г." width="172" heigh="196">
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/fish100g.jpg" alt="Курица 500г." width="172" heigh="196">
+                </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <div>
+              <div class="product-inner">
                 <dl class="prodict__specs-item">
                   <dt class="prodict__specs_field">Масса</dt>
                   <dd class="prodict__specs-value">500 г</dd>
@@ -141,10 +151,14 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/g500g.jpg" alt="Курица 500г." width="161px" heigh="171px">
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/g500g.jpg" alt="Курица 500г." width="161px" heigh="171px">
+                </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <div>
+              <div class="product-inner">
                 <dl class="prodict__specs-item">
                   <dt class="prodict__specs_field">Масса</dt>
                   <dd class="prodict__specs-value">500 г</dd>
@@ -163,10 +177,14 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/g1000g.jpg" alt="Курица 500г." width="172" heigh="196">
-                <h3>Cat Energy PRO 500 г</h3>
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="8" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/g1000g.jpg" alt="Курица 500г." width="172" heigh="196">
+                </picture>
+                <h3>Cat Energy PRO 1000 г</h3>
               </a>
-              <div>
+              <div class="product-inner">
                 <dl class="prodict__specs-item">
                   <dt class="prodict__specs_field">Масса</dt>
                   <dd class="prodict__specs-value">1000 г</dd>
@@ -185,10 +203,14 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
-                <img class="energy-image-link" src="images/ris500g.jpg" alt="Курица 500г." width="163" heigh="174">
+                <picture>
+                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+                  <img class="energy-image-link" src="images/ris500g.jpg" alt="Курица 500г." width="163" heigh="174">
+                </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
-              <div>
+              <div class="product-inner">
                 <dl class="prodict__specs-item">
                   <dt class="prodict__specs_field">Масса</dt>
                   <dd class="prodict__specs-value">500 г</dd>

@@ -13,7 +13,11 @@
   <header class="main-header">
     <div class="page-header__container container">
     <a class="navigation-logo" href="index.html" aria-current="page">
-    <img src="images/svg/logo.svg" width="70" height="59" alt="Логотип Кэт Энерджи">
+    <picture>
+      <source width="174" height="59" type="images/svg" media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg">
+      <source width="174" height="59" type="images/svg" media="(min-width: 768)" srcset="images/svg/logo-tablet.svg">
+      <img src="images/svg/logodesk.svg" width="202" height="59" alt="Логотип Кэт Энерджи">
+    </picture>
     </a>
     <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
     <nav class="page-header__navigation navigation">
@@ -34,10 +38,12 @@
       <h1 class="visually-hidden">Функциональное питание для котов.</h1>
       <p class="advantages-text page-text">Занялся собой? Займись котом!</p>
     </div>
+    <picture>
+      <source width="552" height="499" type="images/webp" media="(min-width: 1440px)" srcset="images/webp/index-can.webp 1x, images/webp/index-can@2x.webp 2x">
+      <source width="709" height="609" type="images/webp" media="(min-width: 768px)" srcset="images/webp/index-can-tablet.webp 1x, images/webp/index-can-tablet@2x.png.webp 2x">
+      <img src="images/img-hero.jpg" width="709" height="609" alt="Cat pro Energy">
+    </picture>
       <a class="navigation-button button" href="#">подобрать программу</a>
-      <figure class="hero-img">
-        <img src="images/img-hero.jpg" width="709" height="609" alt="Cat pro Energy">
-      </figure>
     </section>
   </div>
   </header>
@@ -103,10 +109,20 @@
           <p class="cash-eat">Затраты на питание:<span class="life-card-price">15 000 РУБ.</span></p>
         </div>
       <div class="example_slider slider">
-        <figure class="slider__image slider__image--before">
-          <img src="images/bigcat.png" width="280" height="256" alt="Толстый кот">
-          <img class="slider_image slider__image--after" src="images/thin.png" width="280" height="256" alt="худойк кот">
-        </figure>
+        <div class="slider__image slider__image--before">
+          <picture>
+            <source width="560" height="512" type="images/webp" media="(min-width: 1440px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
+            <source width="280" height="256" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
+            <img src="images/bigcat.png" width="280" height="256" alt="Толстый кот">
+          </picture>
+        </div>
+        <div class="slider__image slider__image--after">
+          <picture>
+            <source width="560" height="512" type="images/webp" media="(min-width: 1440px)" srcset="images/webp/thin-cat-tablet@1x.webp 1x, images/webp/thin-cat-tablet@2x.webp 2x">
+            <source width="280" height="256" type="images/webp" media="(min-width: 768px)" srcset="images/webp/thin-fat-mobile@1x.webp 1x, images/webp/thin-fat-mobile@2x.webp 2x">
+            <img src="images/thin.png" width="280" height="256" alt="худой кот">
+          </picture>
+      </div>
           <button class="slider__change-control" type="button">
            <span class="visually-hidden">Визуализация состояния питомца при разных программах</span>
           </button>
