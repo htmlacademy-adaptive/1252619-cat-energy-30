@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Sergey Lobanov](https://up.htmlacademy.ru/adaptive/30/user/1252619).
-* Наставник: `Наталья Зотова`.
+* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
