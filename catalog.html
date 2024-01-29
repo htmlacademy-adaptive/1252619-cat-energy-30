@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="page-header__container container">
+      <div class="main-header__container container">
       <a class="navigation-logo" href="index.html" aria-current="page">
       <picture>
         <source width="174" height="59" type="images/svg" media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg">
@@ -17,8 +17,8 @@
         <img src="images/svg/logodesk.svg" width="202" height="59" alt="Логотип Кэт Энерджи">
       </picture>
       </a>
-      <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
-      <nav class="page-header__navigation navigation">
+      <button class="main-header__toggle" aria-label="Открыть меню" type="button"></button>
+      <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html" aria-current="page">Главная.</a>
@@ -33,33 +33,36 @@
       </nav>
       </div>
     </header>
-      <main class="page__main">
+      <main class="page-main">
         <div class="container">
         <section class="catalog">
-        <h1 class="page__title page-title">Каталог продукции</h1>
+        <h1 class="page-title page-title">Каталог продукции</h1>
         <div class="energy-product">
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/chi500g.jpg" alt="Курица 500г." width="161" height="172">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-chiken-500g@1x.webp 1x, images/webp/desktop-chiken-500g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-cat-500g@1x.webp 1x, images/webp/table-cat-500g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-cat-500g@1x.webp 1x, images/webp/mobile-cat-500g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-chiken-500g@1x.png 1x, images/webp/desktop-chiken-500g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-cat-500g@1x.png 1x, table-cat-500g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-cat-500g@1x.png" srcset="images/webp/mobile-cat-500g@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы.">
                 </picture>
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
               </a>
               <div class="product-inner">
-              <dl class="prodict__specs-item">
-                <dt class="prodict__specs_field">Масса</dt>
-                <dd class="prodict__specs-value">500 г</dd>
-              <div class="prodict__specs-item">
-                <dt class="prodict__specs_field">Вкус</dt>
-                <dd class="prodict__specs-value">Курица</dd>
+              <dl class="prodict-specs-item">
+                <dt class="prodict-specs-field">Масса</dt>
+                <dd class="prodict-specs-value">500 г</dd>
+              <div class="prodict-specs-item">
+                <dt class="prodict-specs-field">Вкус</dt>
+                <dd class="prodict-specs-value">Курица</dd>
               </div>
               <div>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Цена</dt>
-                  <dd class="prodict__specs-value">700 ₽</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Цена</dt>
+                  <dd class="prodict-specs-value">700 ₽</dd>
               </div>
               </div>
             </dl>
@@ -71,24 +74,27 @@
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                 <img class="energy-image-link" src="images/chi1000g.jpg" alt="Курица 500г." width="172px" height="196px">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-chiken-1000g@1x.webp 1x, images/webp/desktop-chiken-1000g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-cat-1000g@1x.webp 1x, images/webp/table-cat-1000g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-cat-500g@1x.webp 1x, images/webp/mobile-cat-1000g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-chiken-1000g@1x.png 1x, images/webp/desktop-chiken-1000g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-cat-1000g@1x.png 1x, table-cat-1000g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-cat-1000g@1x.png" srcset="images/webp/mobile-cat-1000g@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 1000г.">
                 </picture>
                 <h3>Cat Energy PRO 1000 г</h3>
               </a>
               <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">1000 г</dd>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Курица</dd>
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">1000 г</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Курица</dd>
                 </div>
-                <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">1000 ₽</dd>
+                <div-
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">1000 ₽</dd>
                 </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
@@ -97,26 +103,29 @@
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/fish500g.jpg" alt="Курица 500г." width="163" height="174">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-fish-500g@1x.webp 1x, images/webp/desktop-fish-500g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-fish-500g@1x.webp 1x, images/webp/table-fish-500g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-fish-500g@1x.webp 1x, images/webp/mobile-fish-500g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-fish-500g@1x.png 1x, images/webp/desktop-fish-500g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-fish-500g@1x.png 1x, table-fish-500g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-fish-500g@1x.png" srcset="images/webp/mobile-fish-500@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 500г.">
                 </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
               <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">500 г</dd>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Рыба</dd>
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">500 г</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Рыба</dd>
                 </div>
                 <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">700 ₽</dd>
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">700 ₽</dd>
                 </div>
-                </div>
+                </di-
               </dl>
                 <button class="energy-favorites button button-light" type="button">Заказать</button>
                 </div>
@@ -126,76 +135,27 @@
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/fish100g.jpg" alt="Курица 500г." width="172" height="196">
-                </picture>
-                <h3>Cat Energy PRO 500 г</h3>
-              </a>
-              <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">500 г</dd>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Рыба</dd>
-                </div>
-                <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">1000 ₽</dd>
-                </div>
-              <button class="energy-favorites button button-light" type="button">Заказать</button>
-            </li>
-          </ul>
-          <ul class="catalog__list">
-            <li class="catalog__item product">
-              <a class="energy-card-link" href="#">
-                <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/g500g.jpg" alt="Курица 500г." width="161px" height="171px">
-                </picture>
-                <h3>Cat Energy PRO 500 г</h3>
-              </a>
-              <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">500 г</dd>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Курица</dd>
-                </div>
-                <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">400 ₽</dd>
-                </div>
-              <button class="energy-favorites button button-light" type="button">Заказать</button>
-            </li>
-          </ul>
-          <ul class="catalog__list">
-            <li class="catalog__item product">
-              <a class="energy-card-link" href="#">
-                <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="8" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/g1000g.jpg" alt="Курица 500г." width="172" height="196">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-fish-1000g@1x.webp 1x, images/webp/desktop-fish-1000g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-fish-1000g@1x.webp 1x, images/webp/table-fish-1000g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-fish-1000g@1x.webp 1x, images/webp/mobile-fish-1000g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-fish-1000g@1x.png 1x, images/webp/desktop-fish-1000g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-fish-1000g@1x.png 1x, images/webp/table-fish-1000g@2x.png 2x">
+                  <img class="product-img" src="images/webp/table-fish-1000g@1x.png" srcset="images/webp/table-fish-1000g@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 1000г.">
                 </picture>
                 <h3>Cat Energy PRO 1000 г</h3>
               </a>
               <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">1000 г</dd>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Курица</dd>
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">1000 г</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Рыба</dd>
                 </div>
-                <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">700 ₽</dd>
+                <di-
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">1000 ₽</dd>
                 </div>
               <button class="energy-favorites button button-light" type="button">Заказать</button>
             </li>
@@ -204,26 +164,87 @@
             <li class="catalog__item product">
               <a class="energy-card-link" href="#">
                 <picture>
-                  <source width="161" height="172" type="images/webp" media="(min-width: 1200px)" srcset="images/webp/cat-fat-table@1x.webp 1x, images/webp/cat-fat-table@2x.webp 2x">
-                  <source width="68" height="86" type="images/webp" media="(min-width: 768px)" srcset="images/webp/cat-fat-mobile@1x.webp 1x, images/webp/cat-fat-mobile@2x.webp 2x">
-                  <img class="energy-image-link" src="images/ris500g.jpg" alt="Курица 500г." width="163" height="174">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-buckwheat-500g@1x.webp 1x, images/webp/desktop-buckwheat-500g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-buckwheat-500g@1x.webp 1x, images/webp/table-buckwheat-500g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-buckwheat-500g@1x.webp 1x, images/webp/mobile-buckwheat-500g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-buckwheat-500g@1x.png 1x, images/webp/desktop-buckwheat-500g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-buckwheat-500g@1x.png 1x, images/webp/table-buckwheat-500g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-buckwheat-500g@1x.png" srcset="images/webp/mobile-buckwheat-500g@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 500г.">
                 </picture>
                 <h3>Cat Energy PRO 500 г</h3>
               </a>
               <div class="product-inner">
-                <dl class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Масса</dt>
-                  <dd class="prodict__specs-value">500 г</dd>
-                </dl>
-              </div>
-                <div class="prodict__specs-item">
-                  <dt class="prodict__specs_field">Вкус</dt>
-                  <dd class="prodict__specs-value">Курица</dd>
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">500 г</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Гречка</dd>
                 </div>
                 <div>
-                  <div class="prodict__specs-item">
-                    <dt class="prodict__specs_field">Цена</dt>
-                    <dd class="prodict__specs-value">500 с</dd>
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">400 ₽</dd>
+                </div>
+              <button class="energy-favorites button button-light" type="button">Заказать</button>
+            </li>
+          </ul>
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <a class="energy-card-link" href="#">
+                <picture>
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-buckwheat-1000g@1x.webp 1x, images/webp/desktop-buckwheat-1000g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-buckwheat-1000g@1x.webp 1x, images/webp/table-buckwheat-1000g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-buckwheat-1000g@1x.webp 1x, images/webp/mobile-buckwheat-1000g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-buckwheat-1000g@1x.png 1x, images/webp/desktop-buckwheat-1000g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-buckwheat-1000g@1x.png 1x, images/webp/table-buckwheat-1000g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-buckwheat-1000g@1x.png" srcset="images/webp/mobile-buckwheat-1000g@1x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 1000г.">
+                </picture>
+                <h3>Cat Energy PRO 1000 г</h3>
+              </a>
+              <div class="product-inner">
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">1000 г</dd>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Гречка</dd>
+                </div>
+                <div>
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">700 ₽</dd>
+                </div>
+              <button class="energy-favorites button button-light" type="button">Заказать</button>
+            </li>
+          </ul>
+          <ul class="catalog-list">
+            <li class="catalog-item product">
+              <a class="energy-card-link" href="#">
+                <picture>
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-rice-500g@1x.webp 1x, images/webp/desktop-rice-500g@2x.webp 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-rice-500g@1x.webp 1x, images/webp/table-rice-500g@2x.webp 2x">
+                  <source width="140"  height="107" type="images/webp" srcset="images/webp/mobile-rice-500g@1x.webp 1x, images/webp/mobile-rice-500g@2x.webp 2x">
+                  <source width="169"  height="210" type="images/webp" media="(min-width:1440px)" srcset="images/webp/desktop-rice-500g@1x.png 1x, images/webp/desktop-rice-500g@2x.png 2x">
+                  <source width="200"  height="210" type="images/webp" media="(min-width:768px)" srcset="images/webp/table-rice-500g@1x.png 1x, images/webp/table-rice-500g@2x.png 2x">
+                  <img class="product-img" src="images/webp/mobile-rice-500g@1x.png" srcset="images/webp/mobile-rice-500g@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы 500г.">
+                </picture>
+                <h3>Cat Energy PRO 500 г</h3>
+              </a>
+              <div class="product-inner">
+                <dl class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Масса</dt>
+                  <dd class="prodict-specs-value">500 г</dd>
+                </dl>
+              </div>
+                <div class="prodict-specs-item">
+                  <dt class="prodict-specs-field">Вкус</dt>
+                  <dd class="prodict-specs-value">Рис</dd>
+                </div>
+                <div>
+                  <div class="prodict-specs-item">
+                    <dt class="prodict-specs-field">Цена</dt>
+                    <dd class="prodict-specs-value">500 с</dd>
                 </div>
                 </div>
                 <button class="energy-favorites button button-light" type="button">Заказать</button>
@@ -231,8 +252,8 @@
           </ul>
         </div>
         </section>
-          <ul class="catalog__list">
-            <li class="catalog__item product">
+          <ul class="catalog-list">
+            <li class="catalog-item product">
               <a class="energy-card-link" href="#">
                 <h3 class="product__title">Показать еще 100500 товаров</h3></a>
               <p class="product-info">На самом деле вкусов гораздо больше!</p>
@@ -243,31 +264,31 @@
         <section class="extra">
           <div class="container">
             <h2 class="extra__title section-title">Дополнительные товары</h2>
-            <div class="exta__inner">
+            <div class="exta-inner">
               <ul class="extra__list">
-                <li class="add_item add-product">
+                <li class="add-item add-product">
                   <h3 class="add-product__title">Сахаразаменитель</h3>
-                  <p class="add__product__specs-field">1 упаковка (100 г)</p>
-                  <p class="add__product__specs-value">200 ₽</p>
-                  <a class="extra_product_button button" href="#">Заказать</a>
+                  <p class="add-product-specs-field">1 упаковка (100 г)</p>
+                  <p class="add-product-specs-value">200 ₽</p>
+                  <a class="extra-product-button button" href="#">Заказать</a>
                 </li>
-                <li class="add_item add-product">
+                <li class="add-item add-product">
                   <h3 class="add-product__title">Питьевая вода</h3>
-                  <p class="add__product__specs-field">5 литров</p>
-                  <p class="add__product__specs-value">50 ₽</p>
-                  <a class="extra_product_button button" href="#">Заказать</a>
+                  <p class="add-product-specs-field">5 литров</p>
+                  <p class="add-product-specs-value">50 ₽</p>
+                  <a class="extra-product-button button" href="#">Заказать</a>
                 </li>
-                <li class="add_item add-product">
+                <li class="add-item add-product">
                   <h3 class="add-product__title">Молоко</h3>
-                  <p class="add__product__specs-field">1 литр</p>
-                  <p class="add__product__specs-value">100 ₽</p>
-                  <a class="extra_product_button button" href="#">Заказать</a>
+                  <p class="add-product-specs-field">1 литр</p>
+                  <p class="add-product-specs-value">100 ₽</p>
+                  <a class="extra-product-button button" href="#">Заказать</a>
                 </li>
-                <li class="add_item add-product">
+                <li class="add-item add-product">
                   <h3 class="add-product__title">Витамины</h3>
-                  <p class="add__product__specs-field">1 упаковка (30 г)</p>
-                  <p class="add__product__specs-value">300 ₽</p>
-                  <a class="extra_product_button button" href="#">Заказать</a>
+                  <p class="add-product-specs-field">1 упаковка (30 г)</p>
+                  <p class="add-product-specs-value">300 ₽</p>
+                  <a class="extra-product-button button" href="#">Заказать</a>
                 </li>
               </ul>
               <div class="extra__promotion">
@@ -280,9 +301,9 @@
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts-container container">
-            <div class="contacts_wrapper">
+            <div class="contacts__wrapper">
               <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-              <address class="contacts_address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span>
               </address>
             </div>
          <figure class="map">

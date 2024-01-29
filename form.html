@@ -27,11 +27,11 @@
           </ul>
         </nav>
       </header>
-      <main class="page__main">
+      <main class="page-main">
         <section class="program-select">
           <header class="program-select__header">
               <h1 class="program-select__title page-title">Подбр программы</h1>
-              <p class="program-select_description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+              <p class="program-select-description">Заполните анкету и мы подберем программу питания для вашего кота</p>
           </header>
           <form class="program-select__form form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form__wrapper">
@@ -49,8 +49,8 @@
             </label>
           </li>
           <li class="form__group-item">
-            <label class="personal-data__item">Возраст (лет):
-              <input class="personal-data__input page-input" id="age" type="number" name="cat-age" placeholder="7">
+            <label class="personal-data-item">Возраст (лет):
+              <input class="personal-data-input page-input" id="age" type="number" name="cat-age" placeholder="7">
             </label>
           </li>
         </ul>
@@ -60,17 +60,17 @@
               <ul class="control control--radio">
                 <li class="control__item">
                   <input class="control__input control__input--radio" type="radio" name="weight" value="Похудение" id="slimming" checked>
-                  <label class="control_label form__label" alt="sliming">Похудение</label>
+                  <label class="control-label form__label" alt="sliming">Похудение</label>
                 </li>
                 <li>
-                  <label class="weight-question__label">
-                    <input class="weight-question__radio" id="weight-down" type="radio" name="weight" value="weight-down" checked>
+                  <label class="weight-question-label">
+                    <input class="weight-question-radio" id="weight-down" type="radio" name="weight" value="weight-down" checked>
                     <span class="form__label">набор массы</span>
                   </label>
                 </li>
                 <li>
-                  <label class="weight-question__label">
-                    <input class="weight-question__radio" id="weight-up" type="radio" name="weight" value="weight-up">Не знаю (Нужен ваш совет)</label>
+                  <label class="weight-question-label">
+                    <input class="weight-question-radio" id="weight-up" type="radio" name="weight" value="weight-up">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
@@ -84,8 +84,8 @@
                     <input class="form__input form__input--email" type="email" id="form-email" placeholder="kuklachev@gmail.com" required>
                   </span>
                 </div>
-              <label class="form-contacts__item">Телефон:*
-                <input class="form-contacts__input page-input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              <label class="form-contacts-item">Телефон:*
+                <input class="form-contacts-input page-input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
               </label>
             </div>
             </fieldset>
@@ -94,28 +94,28 @@
                 <fieldset class="form__fieldset form__fieldset--comment">
                 <h2 class="form__comment">Комментарий</h2>
                 <label class="visually-hidden" for="comment">Расскажите про кота</label>
-                <textarea class="form-comment__textarea page-input" id="comment" name="comment" placeholder="Расскажите оба всех повадках кота"></textarea>
+                <textarea class="form-comment-textarea page-input" id="comment" name="comment" placeholder="Расскажите оба всех повадках кота"></textarea>
                 </fieldset>
               </div>
 
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--check">
-              <h2 class="program-form__check section-title">Дополнительно</h2>
+              <h2 class="program-form-check section-title">Дополнительно</h2>
               <ul class="control control--check list-rest">
                 <li class="control__item">
                   <input class="control__input control__input--check" type="checkbox" name="sweetener" value="Сахаразаменитель" id="sweetener" checked>
                   <label class="control__label form__label" for="sweetener">Сахаразаменитель</label>
                 </li>
-                <li class="form-additional__item">
-                  <input class="form-additional__checkbox" type="checkbox" name="water" value="Сахаразаменитель" id="water" checked>
+                <li class="form-additional-item">
+                  <input class="form-additional-checkbox" type="checkbox" name="water" value="Сахаразаменитель" id="water" checked>
                   <label class="control__label form__label" for="water">питьевая вода</label>
                 </li>
-                <li class="form-additional__item">
-                  <input class="form-additional__checkbox" type="checkbox" name="milk" value="Сахаразаменитель" id="milk" checked>
+                <li class="form-additional-item">
+                  <input class="form-additional-checkbox" type="checkbox" name="milk" value="Сахаразаменитель" id="milk" checked>
                   <label class="control__label form__label" for="milk">молоко</label>
                 </li>
-                <li class="form-additional__item">
-                  <input class="form-additional__checkbox" type="checkbox" name="vitamin" value="Сахаразаменитель" id="vitamin" checked>
+                <li class="form-additional-item">
+                  <input class="form-additional-checkbox" type="checkbox" name="vitamin" value="Сахаразаменитель" id="vitamin" checked>
                   <label class="control__label form__label" for="vitamin">витамины</label>
                 </li>
               </ul>
@@ -127,13 +127,12 @@
             </div>
           </form>
         </section>
-
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts-container container">
-            <div class="contacts_wrapper">
+            <div class="contacts__wrapper">
               <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-              <address class="contacts_address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span>
               </address>
             </div>
          <figure class="map">
